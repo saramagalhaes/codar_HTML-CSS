@@ -1,51 +1,67 @@
-.footer {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+.footer-container {
   background-color: #000;
   color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 35px;
+}
+.footer-container h2 {
+  font-size: 34px;
+  font-style: italic;
+  padding-bottom: 20px;
+}
+.footer-container h3 {
+  padding-bottom: 15px;
 }
 .footer-column1,
 .footer-column2,
 .footer-column3,
 .footer-column4 {
-  padding: 50px 40px 60px 40px;
+  width: 25%;
 }
-.footer p {
+.footer-column2,
+.footer-column3,
+.footer-column4 {
   padding-top: 15px;
-}
-.footer-column1 {
-  width: 33%;
-}
-.footer-column1 h2 {
-  font-size: 34px;
-  font-style: italic;
+  margin-left: 50px;
 }
 .footer-column1 a {
   text-decoration: none;
   color: #fff;
-  margin-right: 1px;
+  padding-right: 1px;
 }
-.footer-column2 {
-  width: 22%;
-  padding-top: 60px;
+.footer-column3 p {
+  padding-bottom: 25px;
 }
-.footer-column3 {
-  padding-top: 60px;
-}
-.footer-column4 {
-  padding-top: 60px;
-}
-.footer-column4-icons {
-  text-align: center;
+.footer-column4 i {
   font-size: 24px;
+  padding: 0px 10px;
   color: #d6000d;
-  padding-top: 15px;
-  width: 100%;
 }
-.footer-column4-icons i:nth-child(1) {
-  padding-right: 15px;
-}
-.footer-column4-icons i:nth-child(2) {
-  padding-right: 15px;
+
+@media all and (max-width: 668px) {
+  .footer-container {
+    display: block;
+  }
+  .footer-container h3 {
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 20px;
+  }
+  .footer-column2,
+  .footer-column3,
+  .footer-column4 {
+    width: 180px;
+  }
+  .footer-column1 {
+    margin: auto;
+    width: 250px;
+    text-align: center;
+  }
+  .footer-column1 h2 {
+    font-size: 40px;
+  }
+  .footer-column1 p {
+    font-size: 18px;
+  }
 }
